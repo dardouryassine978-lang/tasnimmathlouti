@@ -1,0 +1,940 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="عرض تاريخي وقانوني حول فلسطين والقانون الدولي والسلم بين الدول">
+<title>فلسطين والقانون الدولي | ISLEM M</title>
+
+<style>
+:root {
+  --navy: #172b3a;
+  --gold: #b18a50;
+  --cream: #f7f4ed;
+  --white: #ffffff;
+  --text: #303b42;
+  --green: #315c49;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Tahoma", "Arial", sans-serif;
+  background: var(--cream);
+  color: var(--text);
+  line-height: 1.9;
+}
+
+header {
+  background: var(--navy);
+  color: white;
+  padding: 18px 7%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  border-bottom: 3px solid var(--gold);
+}
+
+.logo {
+  font-size: 21px;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.logo span {
+  color: #d8b77f;
+}
+
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 18px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+  transition: .3s;
+}
+
+nav a:hover {
+  color: #e1bd83;
+}
+
+.hero {
+  min-height: 510px;
+  background:
+    linear-gradient(rgba(12,25,35,.76),rgba(12,25,35,.78)),
+    url("https://images.unsplash.com/photo-1548345680-f5475ea5df84?auto=format&fit=crop&w=1800&q=85")
+    center/cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 60px 20px;
+  color: white;
+}
+
+.hero-content {
+  max-width: 850px;
+}
+
+.hero h1 {
+  font-size: clamp(30px,5vw,54px);
+  color: #f0d4a2;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 18px;
+  margin-bottom: 25px;
+}
+
+.presenter {
+  border-top: 1px solid #d2b27d;
+  border-bottom: 1px solid #d2b27d;
+  display: inline-block;
+  padding: 10px 35px;
+  color: #f0d4a2;
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+.btn {
+  display: inline-block;
+  background: var(--gold);
+  color: white;
+  text-decoration: none;
+  padding: 11px 27px;
+  border-radius: 4px;
+  margin: 8px;
+  transition: .3s;
+}
+
+.btn:hover {
+  background: #92703e;
+  transform: translateY(-2px);
+}
+
+.container {
+  max-width: 1150px;
+  margin: auto;
+  padding: 65px 22px;
+}
+
+.section-title {
+  text-align: center;
+  margin-bottom: 35px;
+}
+
+.section-title h2 {
+  color: var(--navy);
+  font-size: 29px;
+  display: inline-block;
+  border-bottom: 3px solid var(--gold);
+  padding-bottom: 10px;
+}
+
+.section-title p {
+  color: #747474;
+  margin-top: 10px;
+}
+
+.intro {
+  background: white;
+  border-right: 5px solid var(--gold);
+  padding: 25px;
+  border-radius: 5px;
+  box-shadow: 0 4px 18px #0000000b;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(240px,1fr));
+  gap: 22px;
+  margin-top: 30px;
+}
+
+.card {
+  background: white;
+  padding: 25px;
+  border-radius: 5px;
+  border-top: 3px solid var(--gold);
+  box-shadow: 0 5px 18px #0000000b;
+  transition: .3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card h3 {
+  color: var(--navy);
+  margin-bottom: 12px;
+}
+
+.icon {
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+.dark-section {
+  background: var(--navy);
+  color: white;
+}
+
+.dark-section .section-title h2 {
+  color: white;
+}
+
+.dark-section .section-title p {
+  color: #d2d8dc;
+}
+
+.history-item {
+  background: white;
+  color: var(--text);
+  margin: 20px 0;
+  padding: 20px;
+  border-right: 4px solid var(--gold);
+  border-radius: 4px;
+}
+
+.history-item h3 {
+  color: var(--green);
+}
+
+.year {
+  display: inline-block;
+  color: white;
+  background: var(--green);
+  padding: 3px 15px;
+  border-radius: 3px;
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+.instruction {
+  background: white;
+  padding: 30px;
+  margin: 25px 0;
+  border-radius: 5px;
+  box-shadow: 0 5px 20px #0000000b;
+}
+
+.instruction h3 {
+  color: var(--navy);
+  margin-bottom: 15px;
+  font-size: 21px;
+}
+
+.instruction h4 {
+  color: var(--green);
+  margin: 20px 0 8px;
+}
+
+.instruction ul {
+  padding-right: 25px;
+}
+
+.instruction li {
+  margin: 8px 0;
+}
+
+.quote {
+  background: #f3eee3;
+  border-right: 4px solid var(--gold);
+  padding: 18px;
+  margin: 20px 0;
+  font-style: italic;
+}
+
+.highlight {
+  color: #936d36;
+  font-weight: bold;
+}
+
+.photo {
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
+  border-radius: 5px;
+  margin: 20px 0;
+}
+
+.conclusion {
+  background: var(--green);
+  color: white;
+  padding: 40px 25px;
+  text-align: center;
+}
+
+.conclusion h2 {
+  color: #f0d4a2;
+  margin-bottom: 15px;
+}
+
+.references {
+  background: white;
+  padding: 25px;
+  border-radius: 5px;
+}
+
+.references a {
+  color: var(--green);
+  display: block;
+  margin: 12px 0;
+  text-decoration: none;
+  overflow-wrap: anywhere;
+}
+
+.references a:hover {
+  text-decoration: underline;
+}
+
+footer {
+  background: #101f2b;
+  color: white;
+  text-align: center;
+  padding: 25px;
+}
+
+footer span {
+  color: #e0bd83;
+}
+
+.top-button {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  background: var(--gold);
+  color: white;
+  border: none;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  font-size: 20px;
+  cursor: pointer;
+  display: none;
+}
+
+@media(max-width:700px) {
+  header {
+    justify-content: center;
+    text-align: center;
+  }
+
+  nav {
+    justify-content: center;
+    gap: 12px;
+  }
+
+  nav a {
+    font-size: 12px;
+  }
+
+  .hero {
+    min-height: 440px;
+  }
+
+  .container {
+    padding: 45px 17px;
+  }
+
+  .instruction {
+    padding: 20px;
+  }
+
+  .photo {
+    height: 210px;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <div class="logo">PALESTINE <span> & LAW</span></div>
+
+  <nav>
+    <a href="#home">الرئيسية</a>
+    <a href="#intro">المقدمة</a>
+    <a href="#history">تاريخ فلسطين</a>
+    <a href="#instruction1">التعليمة الأولى</a>
+    <a href="#instruction2">التعليمة الثانية</a>
+    <a href="#conclusion">الخاتمة</a>
+    <a href="#references">المراجع</a>
+  </nav>
+</header>
+
+<section class="hero" id="home">
+  <div class="hero-content">
+    <h1>فلسطين والقانون الدولي</h1>
+
+    <p>
+      دراسة تاريخية وقانونية حول القضية الفلسطينية،
+      وانتهاكات القانون الدولي، وسبل تعزيز السلم والأمن الدوليين.
+    </p>
+
+    <div class="presenter">
+      إعداد وتقديم: ISLEM M
+    </div>
+
+    <br>
+
+    <a href="#intro" class="btn">اكتشف العرض</a>
+  </div>
+</section>
+
+<!-- INTRODUCTION -->
+
+<section class="container" id="intro">
+  <div class="section-title">
+    <h2>مقدمة عامة</h2>
+    <p>القانون الدولي أساس تنظيم العلاقات بين الدول</p>
+  </div>
+
+  <div class="intro">
+    <p>
+      يُعدّ القانون الدولي مجموعة من القواعد والمبادئ التي تنظم
+      العلاقات بين الدول والمنظمات الدولية، وتهدف إلى المحافظة
+      على السلم والأمن الدوليين، وحماية حقوق الإنسان،
+      ومنع استعمال القوة بصورة غير مشروعة.
+    </p>
+
+    <br>
+
+    <p>
+      وتُعتبر القضية الفلسطينية من أبرز القضايا التي تطرح
+      تساؤلات مهمة حول مدى احترام قواعد القانون الدولي،
+      وخاصة مبادئ حق الشعوب في تقرير المصير،
+      وحماية المدنيين أثناء النزاعات المسلحة،
+      واحترام سيادة الدول ووحدة أراضيها.
+    </p>
+  </div>
+
+  <div class="cards">
+    <div class="card">
+      <div class="icon">⚖️</div>
+      <h3>العدالة الدولية</h3>
+      <p>تحقيق العدالة وضمان احترام القوانين والاتفاقيات الدولية.</p>
+    </div>
+
+    <div class="card">
+      <div class="icon">🕊️</div>
+      <h3>السلم الدولي</h3>
+      <p>منع الحروب وتسوية النزاعات بالطرق السلمية.</p>
+    </div>
+
+    <div class="card">
+      <div class="icon">🌍</div>
+      <h3>حقوق الإنسان</h3>
+      <p>حماية كرامة الإنسان وحقه في الحياة والحرية والأمان.</p>
+    </div>
+  </div>
+</section>
+
+<!-- HISTORY -->
+
+<section class="dark-section" id="history">
+  <div class="container">
+    <div class="section-title">
+      <h2>لمحة تاريخية عن فلسطين</h2>
+      <p>محطات تاريخية أساسية في القضية الفلسطينية</p>
+    </div>
+
+    <div class="history-item">
+      <span class="year">1917</span>
+      <h3>وعد بلفور</h3>
+      <p>
+        أصدرت الحكومة البريطانية وعد بلفور الذي أعلن دعمها
+        لإقامة وطن قومي للشعب اليهودي في فلسطين،
+        في سياق الانتداب البريطاني والتحولات السياسية بالمنطقة.
+      </p>
+    </div>
+
+    <div class="history-item">
+      <span class="year">1947</span>
+      <h3>قرار تقسيم فلسطين</h3>
+      <p>
+        أصدرت الجمعية العامة للأمم المتحدة القرار 181،
+        الذي أوصى بتقسيم فلسطين إلى دولتين عربية ويهودية،
+        مع نظام دولي خاص للقدس.
+      </p>
+    </div>
+
+    <div class="history-item">
+      <span class="year">1948</span>
+      <h3>النكبة الفلسطينية</h3>
+      <p>
+        شهد الفلسطينيون تهجيراً واسعاً ونزوحاً جماعياً
+        عن ديارهم، وتدمير عدد كبير من القرى،
+        وتأسست دولة إسرائيل في سياق حرب عام 1948.
+      </p>
+    </div>
+
+    <div class="history-item">
+      <span class="year">1967</span>
+      <h3>حرب يونيو واحتلال الأراضي الفلسطينية</h3>
+      <p>
+        احتلت إسرائيل الضفة الغربية بما فيها القدس الشرقية
+        وقطاع غزة، إضافة إلى أراضٍ عربية أخرى.
+      </p>
+    </div>
+
+    <div class="history-item">
+      <span class="year">1993</span>
+      <h3>اتفاقيات أوسلو</h3>
+      <p>
+        وقعت منظمة التحرير الفلسطينية وإسرائيل
+        إعلان المبادئ بشأن ترتيبات الحكم الذاتي الانتقالي،
+        في محاولة لإطلاق مسار تفاوضي.
+      </p>
+    </div>
+
+    <div class="history-item">
+      <span class="year">2023</span>
+      <h3>تصاعد الحرب في قطاع غزة</h3>
+      <p>
+        اندلعت حرب واسعة بعد هجمات 7 أكتوبر 2023،
+        وتبعها هجوم عسكري إسرائيلي واسع على قطاع غزة،
+        مع آثار إنسانية جسيمة على السكان المدنيين.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- INSTRUCTION 1 -->
+
+<section class="container" id="instruction1">
+
+  <div class="section-title">
+    <h2>التعليمة الأولى</h2>
+    <p>
+      رصد انتهاكات إسرائيل لمبادئ القانون الدولي في فلسطين
+      أو غيرها من الدول
+    </p>
+  </div>
+
+  <div class="instruction">
+
+    <h3>أولاً: انتهاك مبدأ حق الشعوب في تقرير المصير</h3>
+
+    <img class="photo"
+    src="https://images.unsplash.com/photo-1569025690938-a00729c9e1f9?auto=format&fit=crop&w=1200&q=80"
+    alt="منظر لمدينة وبيئة عمرانية">
+
+    <p>
+      ينص ميثاق الأمم المتحدة على احترام مبدأ المساواة في الحقوق
+      وحق الشعوب في تقرير مصيرها.
+      ويُعدّ حق الشعب الفلسطيني في تقرير مصيره حقاً معترفاً به
+      في قرارات الأمم المتحدة وآراء محكمة العدل الدولية.
+    </p>
+
+    <div class="quote">
+      حق تقرير المصير يعني أن يكون للشعوب الحق في اختيار
+      وضعها السياسي وتحديد مستقبلها دون إكراه أو سيطرة أجنبية.
+    </div>
+
+    <h4>مظاهر الانتهاك:</h4>
+
+    <ul>
+      <li>استمرار الاحتلال الإسرائيلي للأراضي الفلسطينية.</li>
+      <li>عرقلة ممارسة الشعب الفلسطيني لحقه في تقرير المصير.</li>
+      <li>توسّع المستوطنات الإسرائيلية في الأراضي الفلسطينية المحتلة.</li>
+    </ul>
+
+    <h3>ثانياً: انتهاك مبدأ احترام سيادة الدول ووحدة أراضيها</h3>
+
+    <p>
+      يحظر القانون الدولي اكتساب الأراضي بالقوة،
+      ويؤكد ضرورة احترام سيادة الدول ووحدة أراضيها.
+      وقد أكدت محكمة العدل الدولية عدم مشروعية استمرار
+      الوجود الإسرائيلي في الأرض الفلسطينية المحتلة
+      في رأيها الاستشاري الصادر سنة 2024.
+    </p>
+
+    <h4>مظاهر الانتهاك:</h4>
+
+    <ul>
+      <li>ضم الأراضي الفلسطينية أو السعي إلى ضمها.</li>
+      <li>بناء المستوطنات وتوسيعها في الأراضي المحتلة.</li>
+      <li>فرض إجراءات تغير الوضع القانوني والديمغرافي للأرض المحتلة.</li>
+    </ul>
+
+    <h3>ثالثاً: انتهاك قواعد القانون الدولي الإنساني</h3>
+
+    <p>
+      تهدف اتفاقيات جنيف، وخاصة اتفاقية جنيف الرابعة،
+      إلى حماية المدنيين والأشخاص الذين لا يشاركون
+      في الأعمال العدائية أثناء النزاعات المسلحة.
+    </p>
+
+    <h4>مظاهر الانتهاك والوقائع التي تستوجب التحقيق:</h4>
+
+    <ul>
+      <li>استهداف المدنيين والأعيان المدنية بصورة غير مشروعة.</li>
+      <li>تدمير المنازل والبنية التحتية المدنية دون مبرر قانوني.</li>
+      <li>عرقلة وصول المساعدات الإنسانية والإمدادات الأساسية.</li>
+      <li>التهجير القسري للسكان خلافاً للقانون الدولي.</li>
+      <li>المساس بالمستشفيات والمدارس والمنشآت الضرورية لحياة المدنيين.</li>
+    </ul>
+
+    <div class="quote">
+      يفرض القانون الدولي الإنساني التمييز بين المدنيين والمقاتلين،
+      ويحظر الهجمات العشوائية والهجمات غير المتناسبة.
+    </div>
+
+    <h3>رابعاً: انتهاك الحق في الحياة والكرامة الإنسانية</h3>
+
+    <p>
+      يكفل الإعلان العالمي لحقوق الإنسان الحق في الحياة
+      والحرية والأمان الشخصي، كما يحظر التعذيب والمعاملة القاسية
+      أو اللاإنسانية.
+    </p>
+
+    <p>
+      إن سقوط أعداد كبيرة من الضحايا المدنيين،
+      وتدهور الأوضاع الصحية والمعيشية،
+      والحرمان من الماء والغذاء والعلاج،
+      كلها مسائل تثير مسؤوليات قانونية دولية خطيرة
+      وتستوجب التحقيق والمحاسبة وفق الأدلة والقانون.
+    </p>
+
+    <h3>خامساً: انتهاك مبدأ عدم استعمال القوة</h3>
+
+    <p>
+      تنص المادة 2 الفقرة 4 من ميثاق الأمم المتحدة
+      على امتناع الدول في علاقاتها الدولية عن التهديد باستعمال
+      القوة أو استعمالها ضد السلامة الإقليمية أو الاستقلال السياسي
+      لأي دولة.
+    </p>
+
+    <p>
+      كما أن هذا المبدأ يرتبط بضرورة احترام قواعد الدفاع الشرعي
+      وشروطه، وعدم تجاوز الحدود التي يضعها القانون الدولي.
+    </p>
+
+    <h3>سادساً: المسؤولية القانونية الدولية</h3>
+
+    <p>
+      لا يقتصر القانون الدولي على تحديد الحقوق والواجبات،
+      بل يتضمن أيضاً آليات للمساءلة عند وقوع الانتهاكات.
+    </p>
+
+    <ul>
+      <li>مسؤولية الدولة عن الأفعال غير المشروعة دولياً.</li>
+      <li>التعويض وجبر الضرر وفق قواعد المسؤولية الدولية.</li>
+      <li>إمكانية ملاحقة الأفراد عن الجرائم الداخلة في اختصاص المحكمة الجنائية الدولية.</li>
+      <li>دور محكمة العدل الدولية في الفصل في النزاعات بين الدول وإصدار الآراء الاستشارية.</li>
+    </ul>
+
+  </div>
+
+  <div class="section-title">
+    <h2>آليات دولية مرتبطة بالقضية الفلسطينية</h2>
+  </div>
+
+  <div class="cards">
+
+    <div class="card">
+      <div class="icon">🏛️</div>
+      <h3>الأمم المتحدة</h3>
+      <p>
+        إصدار القرارات، ودعوة الدول إلى احترام القانون الدولي،
+        والعمل على حماية السلم والأمن الدوليين.
+      </p>
+    </div>
+
+    <div class="card">
+      <div class="icon">⚖️</div>
+      <h3>محكمة العدل الدولية</h3>
+      <p>
+        أصدرت رأياً استشارياً في 19 يوليو 2024
+        بشأن الآثار القانونية الناشئة عن سياسات إسرائيل
+        وممارساتها في الأرض الفلسطينية المحتلة.
+      </p>
+    </div>
+
+    <div class="card">
+      <div class="icon">🔍</div>
+      <h3>المحكمة الجنائية الدولية</h3>
+      <p>
+        تختص بملاحقة الأفراد عن الجرائم الدولية
+        الداخلة في اختصاصها، وفق نظام روما الأساسي.
+      </p>
+    </div>
+
+  </div>
+
+</section>
+
+<!-- INSTRUCTION 2 -->
+
+<section class="dark-section" id="instruction2">
+<div class="container">
+
+  <div class="section-title">
+    <h2>التعليمة الثانية</h2>
+    <p>
+      كيف يمكن تعديل مبادئ القانون الدولي حتى تكون أكثر نجاعة
+      في الحفاظ على سلم الدول؟
+    </p>
+  </div>
+
+  <div class="instruction">
+
+    <h3>مقدمة</h3>
+
+    <p>
+      رغم أهمية القانون الدولي في تنظيم العلاقات الدولية،
+      فإن الواقع أثبت وجود صعوبات في تطبيق بعض قواعده،
+      وخاصة عندما يتعلق الأمر بالدول القوية أو النزاعات المسلحة.
+      لذلك أصبح من الضروري تطوير آليات تطبيقه
+      وتعزيز فعاليته لتحقيق العدالة والسلم الدوليين.
+    </p>
+
+    <h3>1. تعزيز مبدأ المساواة بين الدول</h3>
+
+    <p>
+      يجب ضمان المساواة الفعلية بين جميع الدول،
+      وعدم السماح للدول الكبرى باستغلال نفوذها السياسي
+      أو الاقتصادي للإفلات من المسؤولية القانونية.
+    </p>
+
+    <h3>2. إصلاح مجلس الأمن الدولي</h3>
+
+    <p>
+      من الضروري مراجعة نظام مجلس الأمن،
+      وخاصة استعمال حق النقض (الفيتو)،
+      حتى لا يؤدي إلى تعطيل القرارات الضرورية
+      لحماية المدنيين والمحافظة على السلم الدولي.
+    </p>
+
+    <ul>
+      <li>الحد من استعمال الفيتو في حالات الجرائم الجماعية والفظائع الكبرى.</li>
+      <li>زيادة تمثيل الدول النامية في مجلس الأمن.</li>
+      <li>تعزيز الشفافية في اتخاذ القرارات الدولية.</li>
+    </ul>
+
+    <h3>3. تعزيز دور المحاكم الدولية</h3>
+
+    <p>
+      يجب دعم استقلالية المحاكم الدولية،
+      وتوفير الإمكانيات اللازمة لها،
+      وضمان تنفيذ أحكامها وقراراتها وفق الاختصاصات القانونية
+      المقررة لكل محكمة.
+    </p>
+
+    <h3>4. وضع آليات تنفيذ وعقوبات أكثر فعالية</h3>
+
+    <p>
+      ينبغي تطوير آليات دولية واضحة لمتابعة تنفيذ القرارات،
+      وتحديد عواقب قانونية متناسبة عند عدم احترام الالتزامات الدولية،
+      مع ضمان عدم الإضرار بالمدنيين.
+    </p>
+
+    <h3>5. تعزيز حماية المدنيين أثناء الحروب</h3>
+
+    <ul>
+      <li>ضمان وصول المساعدات الإنسانية دون عوائق غير قانونية.</li>
+      <li>حماية المستشفيات والمدارس ومصادر المياه.</li>
+      <li>منع التهجير القسري للسكان.</li>
+      <li>تطوير آليات مستقلة للتحقيق في الانتهاكات.</li>
+      <li>تعزيز حماية الأطفال والنساء والفئات الضعيفة.</li>
+    </ul>
+
+    <h3>6. نشر ثقافة الحوار والتفاوض السلمي</h3>
+
+    <p>
+      ينبغي تشجيع الدول على حل النزاعات بالطرق السلمية،
+      مثل المفاوضات والوساطة والتحكيم والقضاء الدولي،
+      بدلاً من اللجوء إلى القوة العسكرية.
+    </p>
+
+    <h3>7. تطوير القانون الدولي لمواجهة التحديات الحديثة</h3>
+
+    <p>
+      يجب مواكبة القانون الدولي للتطورات العالمية،
+      خاصة في مجالات الأمن السيبراني،
+      والأسلحة الحديثة، والذكاء الاصطناعي،
+      والتغيرات المناخية، وحماية البيئة.
+    </p>
+
+    <h3>8. تعزيز التعاون الدولي</h3>
+
+    <p>
+      يتطلب تحقيق السلم تعاوناً حقيقياً بين الدول،
+      والمنظمات الدولية، والمجتمع المدني،
+      من أجل منع النزاعات ومعالجة أسبابها
+      الاقتصادية والاجتماعية والسياسية.
+    </p>
+
+    <div class="quote">
+      إن تطوير القانون الدولي لا يعني التخلي عن مبادئه الأساسية،
+      بل يعني تعزيز آليات تطبيقها وضمان احترامها من جميع الدول
+      دون استثناء.
+    </div>
+
+  </div>
+
+  <div class="section-title">
+    <h2>الإصلاحات المقترحة</h2>
+  </div>
+
+  <div class="cards">
+
+    <div class="card">
+      <div class="icon">⚖️</div>
+      <h3>عدالة متساوية</h3>
+      <p>تطبيق القانون على جميع الدول دون تمييز.</p>
+    </div>
+
+    <div class="card">
+      <div class="icon">🏛️</div>
+      <h3>مؤسسات أقوى</h3>
+      <p>إصلاح المنظمات الدولية وتعزيز سلطات المتابعة.</p>
+    </div>
+
+    <div class="card">
+      <div class="icon">🛡️</div>
+      <h3>حماية المدنيين</h3>
+      <p>ضمان احترام حقوق الإنسان والقانون الإنساني.</p>
+    </div>
+
+    <div class="card">
+      <div class="icon">🤝</div>
+      <h3>الحوار الدولي</h3>
+      <p>اعتماد التفاوض والوساطة لتجنب الحروب.</p>
+    </div>
+
+  </div>
+
+</div>
+</section>
+
+<!-- CONCLUSION -->
+
+<section class="conclusion" id="conclusion">
+  <div class="container">
+
+    <h2>الخاتمة</h2>
+
+    <p>
+      نستنتج أن القضية الفلسطينية تكشف أهمية احترام قواعد
+      القانون الدولي وضرورة تطبيقها على جميع الدول دون استثناء.
+      كما تبرز الحاجة إلى إصلاح المؤسسات الدولية وتعزيز
+      دور القضاء الدولي وآليات المساءلة.
+    </p>
+
+    <br>
+
+    <p>
+      إن تحقيق السلام الحقيقي لا يكون بالقوة أو الهيمنة،
+      بل بالعدالة واحترام حقوق الشعوب وسيادة الدول
+      والتزام الجميع بالقانون الدولي.
+    </p>
+
+    <br>
+
+    <h3 style="color:#f0d4a2">
+      لا سلام دون عدالة، ولا عدالة دون احترام القانون.
+    </h3>
+
+  </div>
+</section>
+
+<!-- REFERENCES -->
+
+<section class="container" id="references">
+
+  <div class="section-title">
+    <h2>المراجع والمصادر الرسمية</h2>
+    <p>مصادر قانونية وتاريخية للاستناد إليها في العرض</p>
+  </div>
+
+  <div class="references">
+
+    <h3>المواثيق والوثائق الدولية</h3>
+
+    <a href="https://www.un.org/ar/about-us/un-charter"
+       target="_blank">
+      1. ميثاق الأمم المتحدة
+    </a>
+
+    <a href="https://www.un.org/ar/about-us/universal-declaration-of-human-rights"
+       target="_blank">
+      2. الإعلان العالمي لحقوق الإنسان
+    </a>
+
+    <a href="https://www.icrc.org/ar"
+       target="_blank">
+      3. اللجنة الدولية للصليب الأحمر واتفاقيات جنيف
+    </a>
+
+    <h3 style="margin-top:25px">القرارات والمحاكم الدولية</h3>
+
+    <a href="https://www.un.org/unispal/"
+       target="_blank">
+      4. الأمم المتحدة - القضية الفلسطينية
+    </a>
+
+    <a href="https://www.icj-cij.org/"
+       target="_blank">
+      5. محكمة العدل الدولية - رأي 19 يوليو 2024
+    </a>
+
+    <a href="https://www.icc-cpi.int/"
+       target="_blank">
+      6. المحكمة الجنائية الدولية
+    </a>
+
+    <a href="https://www.un.org/securitycouncil/"
+       target="_blank">
+      7. مجلس الأمن الدولي
+    </a>
+
+  </div>
+
+</section>
+
+<footer>
+  <p>إعداد وتقديم: <span>ISLEM M</span></p>
+  <p>فلسطين والقانون الدولي | عرض أكاديمي</p>
+  <p>العدالة أساس السلام بين الشعوب</p>
+  <p style="margin-top:10px;font-size:12px;color:#aeb8bd">
+    جميع الحقوق محفوظة © 2026
+  </p>
+</footer>
+
+<button class="top-button" id="topButton"
+onclick="window.scrollTo({top:0,behavior:'smooth'})">
+↑
+</button>
+
+<script>
+const topButton = document.getElementById("topButton");
+
+window.addEventListener("scroll", function() {
+  if (window.scrollY > 400) {
+    topButton.style.display = "block";
+  } else {
+    topButton.style.display = "none";
+  }
+});
+</script>
+
+</body>
+</html>
